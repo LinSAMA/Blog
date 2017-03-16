@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="1">
+        <TextView
+            android:text="the first table"
+            android:gravity="center"
+            />
+        <TableRow>
+            <TextView
+                android:text="cols0"
+                android:background="@mipmap/dot"/>
+            <TextView
+                android:text="cols1"
+                android:background="@mipmap/dot"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TextView
+            android:text="the second table"
+            android:gravity="center"/>
+        <TableRow>
+            <TextView
+                android:text="列不能伸展"
+                android:background="@mipmap/dot"/>
+            <TextView
+                android:text="列1可以伸展"
+                android:gravity="right"
+                android:background="@mipmap/dot"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="the third table"
+            android:gravity="center"/>
+        <TableRow>
+            <TextView
+                android:text="这一列很长，将会造成下一列无法显示或显示不全"
+                android:background="@mipmap/dot"/>
+            <TextView
+                android:text="这一列被挤到屏幕外"
+                android:background="@mipmap/dot"/>
+        </TableRow>>
+    </TableLayout>
+
+</LinearLayout>
