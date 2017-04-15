@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">submenu</string>
+    <string name="title">搜索</string>
+    <string name="local">本地</string>
+    <string name="network">网络</string>
+</resources>
