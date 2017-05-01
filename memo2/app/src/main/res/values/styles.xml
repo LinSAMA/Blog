@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"> -->
+    <!-- Customize your theme here. -->
+    <!--     <item name="colorPrimary">@color/colorPrimary</item>
+         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+         <item name="colorAccent">@color/colorAccent</item>
+     </style>     -->
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item> <!--通过Android:actionBarStyle改变ActionBar的背景颜色，文字样式-->
+    </style>
+
+
+    <style name="actionbar_def_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#e0e0e0</item>
+        <item name="android:displayOptions">showTitle</item>   <!--将左上角的Icon去掉-->
+        <item name="android:titleTextStyle">@style/TextAppearance.Holo.Widget.ActionBar.Title.Own</item>
+    </style>
+
+    <style name="TextAppearance.Holo.Widget.ActionBar.Title.Own" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#ff5151</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+</resources>
